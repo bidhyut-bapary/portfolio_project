@@ -26,13 +26,13 @@ const projects = [
   {
     title: "Responsive Calculator",
     desc: "Available Now",
-    link: "responsive-calculator/index.html",
+    link: "https://bidhyut-bapary.github.io/responsive_calculator/",
   },
   // Bachelor House Monthly Management System
   {
     title: "Bachelor House Monthly Management System",
     desc: "Available Now",
-    link: "bachelor_House_monthly_management_system/index.html",
+    link: "bachelor_house_monthly_management_system/index.html",
   },
   // CV Builder
   {
@@ -50,7 +50,7 @@ const projects = [
   {
     title: "Portfolio Website",
     desc: "Available Now",
-    link: "https://bidhyut-bapary.github.io/my_portfolio_website/",
+    link: "https://bidhyut-bapary.github.io/portfolio_website/",
   },
   // Photo Restoration
   {
