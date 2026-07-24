@@ -20,7 +20,7 @@ const projects = [
   {
     title: "Loan Management System",
     desc: "coming soon",
-    link: "coming_soon/index.html",
+    link: "https://bidhyut-bapary.github.io/portfolio_project/",
   },
   // Responsive Calculator
   {
@@ -38,13 +38,13 @@ const projects = [
   {
     title: "CV Builder",
     desc: "coming soon",
-    link: "coming_soon/index.html",
+    link: "https://bidhyut-bapary.github.io/cv_builder/",
   },
   // Billing System
   {
     title: "Billing System",
     desc: "coming soon",
-    link: "coming_soon/index.html",
+    link: "https://bidhyut-bapary.github.io/billing_system/",
   },
   // Portfolio Website
   {
@@ -56,25 +56,25 @@ const projects = [
   {
     title: "Photo Restoration",
     desc: "coming soon",
-    link: "coming_soon/index.html",
+    link: "https://bidhyut-bapary.github.io/photo_restoration/",
   },
   // Grocery Billing App
   {
     title: "Grocery Billing App",
     desc: "coming soon",
-    link: "coming_soon/index.html",
+    link: "https://bidhyut-bapary.github.io/grocery_billing_app/",
   },
   // Dark/Light Mode UI
   {
     title: "Dark/Light Mode UI",
     desc: "coming soon",
-    link: "coming_soon/index.html",
+    link: "https://bidhyut-bapary.github.io/dark_light_mode_ui/",
   },
   // Git Workflow Tool
   {
     title: "Git Workflow Tool",
     desc: "coming soon",
-    link: "coming_soon/index.html",
+    link: "https://bidhyut-bapary.github.io/git_workflow_tool/",
   },
 ];
 
@@ -92,7 +92,7 @@ function changePage(page) {
     let card = document.createElement("div");
     card.className = "card";
 
-    const badgeText = p.link === "coming_soon/index.html" ? "Coming Soon" : "Available";
+    const badgeText = p.link === "https://bidhyut-bapary.github.io/portfolio_project/" ? "Coming Soon" : "Available";
     const iconClass = p.title.toLowerCase().includes("calculator")
       ? "fa-solid fa-calculator"
       : p.title.toLowerCase().includes("password")
