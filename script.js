@@ -4,9 +4,9 @@ window.addEventListener("load", () => {
   const mainContent = document.querySelector(".main-content");
 
   setTimeout(() => {
-    preloader.style.display = "none"; // Preloader লুকাবে
-    mainContent.style.display = "block"; // Main content দেখাবে
-  }, 1500); // 1 সেকেন্ড delay
+    if (preloader) preloader.style.display = "none";
+    if (mainContent) mainContent.style.display = "block";
+  }, 1500);
 });
 
 const projects = [
@@ -20,7 +20,7 @@ const projects = [
   {
     title: "Loan Management System",
     desc: "coming soon",
-    link: "#",
+    link: "coming_soon/index.html",
   },
   // Responsive Calculator
   {
@@ -38,13 +38,13 @@ const projects = [
   {
     title: "CV Builder",
     desc: "coming soon",
-    link: "#",
+    link: "coming_soon/index.html",
   },
   // Billing System
   {
     title: "Billing System",
     desc: "coming soon",
-    link: "#",
+    link: "coming_soon/index.html",
   },
   // Portfolio Website
   {
@@ -56,25 +56,25 @@ const projects = [
   {
     title: "Photo Restoration",
     desc: "coming soon",
-    link: "#",
+    link: "coming_soon/index.html",
   },
   // Grocery Billing App
   {
     title: "Grocery Billing App",
     desc: "coming soon",
-    link: "#",
+    link: "coming_soon/index.html",
   },
   // Dark/Light Mode UI
   {
     title: "Dark/Light Mode UI",
     desc: "coming soon",
-    link: "#",
+    link: "coming_soon/index.html",
   },
   // Git Workflow Tool
   {
     title: "Git Workflow Tool",
     desc: "coming soon",
-    link: "#",
+    link: "coming_soon/index.html",
   },
 ];
 
@@ -91,9 +91,33 @@ function changePage(page) {
   pageProjects.forEach((p) => {
     let card = document.createElement("div");
     card.className = "card";
+
+    const badgeText = p.link === "coming_soon/index.html" ? "Coming Soon" : "Available";
+    const iconClass = p.title.toLowerCase().includes("calculator")
+      ? "fa-solid fa-calculator"
+      : p.title.toLowerCase().includes("password")
+      ? "fa-solid fa-lock"
+      : p.title.toLowerCase().includes("management")
+      ? "fa-solid fa-chart-line"
+      : p.title.toLowerCase().includes("portfolio")
+      ? "fa-solid fa-globe"
+      : p.title.toLowerCase().includes("billing")
+      ? "fa-solid fa-receipt"
+      : p.title.toLowerCase().includes("photo")
+      ? "fa-solid fa-image"
+      : p.title.toLowerCase().includes("grocery")
+      ? "fa-solid fa-cart-shopping"
+      : "fa-solid fa-box-open";
+
     card.innerHTML = `
-            <h3>${p.title}</h3>
-            <p>${p.desc}</p>
+            <div class="card-top">
+              <div class="card-icon"><i class="${iconClass}"></i></div>
+              <span class="card-badge">${badgeText}</span>
+            </div>
+            <div class="card-body">
+              <h3>${p.title}</h3>
+              <p>${p.desc}</p>
+            </div>
             <a href="${p.link}" class="btn" target="_blank">View Project</a>
         `;
     grid.appendChild(card);
@@ -116,3 +140,31 @@ function setupPagination() {
 }
 
 setupPagination();
+
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    menuToggle.classList.toggle('active');
+  });
+
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+      menuToggle.classList.remove('active');
+    });
+  });
+}
+
+const socialLinks = document.querySelectorAll('.social-links a');
+socialLinks.forEach((link) => {
+  link.addEventListener('click', (event) => {
+    const href = link.getAttribute('href');
+    if (!href || href.startsWith('#')) return;
+
+    event.preventDefault();
+    window.open(href, '_blank', 'noopener,noreferrer');
+  });
+});

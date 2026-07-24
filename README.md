@@ -10,16 +10,17 @@ A collection of my web development projects built using **HTML, CSS, JavaScript,
 
 ## 📂 Project Collection
 
-| Project Name | Description | Live Demo |
-| --- | --- | --- |
-| Password Generator | Secure password generating tool | 🔗 Live [(bidhyut-bapary.github.io in Bing)](https://www.bing.com/search?q="https%3A%2F%2Fbidhyut-bapary.github.io%2Fportfolio_project%2Fpassword_generator%2F") |
-| Loan Management System | Savings & Loan tracking system | ⏳ Coming Soon |
-| Electrical Work | Electrical project showcase | ⏳ Coming Soon |
-| CV Builder | Resume/CV generator tool | ⏳ Coming Soon |
-| Billing System | Simple billing application | ⏳ Coming Soon |
-| Portfolio Website | Personal portfolio showcase | 🔗 Live [(bidhyut-bapary.github.io in Bing)](https://www.bing.com/search?q="https%3A%2F%2Fbidhyut-bapary.github.io%2Fportfolio_project%2Fportfolio_website%2F") |
-| Photo Restoration | Ultra-realistic photo restore | ⏳ Coming Soon |
-| Grocery Billing App | Grocery shop billing system | ⏳ Coming Soon |
+| Project | Description | Status |
+|---------|-------------|--------|
+| 🔐 Password Generator | Generate strong and secure passwords instantly. | ✅ Live |
+| 💰 Loan Management System | Savings and loan tracking application. | 🚧 Coming Soon |
+| ⚡ Electrical Work | Electrical project showcase website. | 🚧 Coming Soon |
+| 📄 CV Builder | Create professional resumes online. | 🚧 Coming Soon |
+| 🧾 Billing System | Simple billing and invoice generator. | 🚧 Coming Soon |
+| 👨‍💻 Portfolio Website | Personal portfolio and developer profile. | ✅ Live |
+| 🖼️ Photo Restoration | AI-powered photo restoration showcase. | 🚧 Coming Soon |
+| 🛒 Grocery Billing App | Grocery shop billing management system. | 🚧 Coming Soon |
+
 ---
 
 ## ✨ Features
