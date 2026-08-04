@@ -34,6 +34,12 @@ const projects = [
     desc: "Available Now",
     link: "bachelor_house_monthly_management_system/index.html",
   },
+    // Image-Metadata-Analyzer
+  {
+    title: "Image Metadata Analyzer",
+    desc: "Available Now",
+    link: "https://image-metadata-analyzer.onrender.com",
+  },
   // CV Builder
   {
     title: "CV Builder",
@@ -104,6 +110,8 @@ function changePage(page) {
       : p.title.toLowerCase().includes("billing")
       ? "fa-solid fa-receipt"
       : p.title.toLowerCase().includes("photo")
+      ? "fa-solid fa-camera"
+      : p.title.toLowerCase().includes("image")
       ? "fa-solid fa-image"
       : p.title.toLowerCase().includes("grocery")
       ? "fa-solid fa-cart-shopping"
