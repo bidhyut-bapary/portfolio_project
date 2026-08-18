@@ -34,7 +34,7 @@ const projects = [
     desc: "Available Now",
     link: "bachelor_house_monthly_management_system/index.html",
   },
-    // Image-Metadata-Analyzer
+  // Image-Metadata-Analyzer
   {
     title: "Image Metadata Analyzer",
     desc: "Available Now",
@@ -46,11 +46,11 @@ const projects = [
     desc: "coming soon",
     link: "coming_soon/index.html",
   },
-  // Billing System
+  // Image To PDF
   {
-    title: "Billing System",
-    desc: "coming soon",
-    link: "coming_soon/index.html",
+    title: "Image To PDF",
+    desc: "Available Now",
+    link: "https://bidhyut-bapary.github.io/Image_to_pdf/"
   },
   // Portfolio Website
   {
@@ -82,6 +82,12 @@ const projects = [
     desc: "coming soon",
     link: "coming_soon/index.html",
   },
+  // Billing System
+  {
+    title: "Billing System",
+    desc: "coming soon",
+    link: "coming_soon/index.html",
+  },
 ];
 
 let perPage = 8;
@@ -102,20 +108,20 @@ function changePage(page) {
     const iconClass = p.title.toLowerCase().includes("calculator")
       ? "fa-solid fa-calculator"
       : p.title.toLowerCase().includes("password")
-      ? "fa-solid fa-lock"
-      : p.title.toLowerCase().includes("management")
-      ? "fa-solid fa-chart-line"
-      : p.title.toLowerCase().includes("portfolio")
-      ? "fa-solid fa-globe"
-      : p.title.toLowerCase().includes("billing")
-      ? "fa-solid fa-receipt"
-      : p.title.toLowerCase().includes("photo")
-      ? "fa-solid fa-camera"
-      : p.title.toLowerCase().includes("image")
-      ? "fa-solid fa-image"
-      : p.title.toLowerCase().includes("grocery")
-      ? "fa-solid fa-cart-shopping"
-      : "fa-solid fa-box-open";
+        ? "fa-solid fa-lock"
+        : p.title.toLowerCase().includes("management")
+          ? "fa-solid fa-chart-line"
+          : p.title.toLowerCase().includes("portfolio")
+            ? "fa-solid fa-globe"
+            : p.title.toLowerCase().includes("billing")
+              ? "fa-solid fa-receipt"
+              : p.title.toLowerCase().includes("photo")
+                ? "fa-solid fa-camera"
+                : p.title.toLowerCase().includes("image")
+                  ? "fa-solid fa-image"
+                  : p.title.toLowerCase().includes("grocery")
+                    ? "fa-solid fa-cart-shopping"
+                    : "fa-solid fa-box-open";
 
     card.innerHTML = `
             <div class="card-top">
