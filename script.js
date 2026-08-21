@@ -32,7 +32,7 @@ const projects = [
   {
     title: "Bachelor House Monthly Management System",
     desc: "Available Now",
-    link: "bachelor_house_monthly_management_system/index.html",
+    link: "#",
   },
   // Image-Metadata-Analyzer
   {
